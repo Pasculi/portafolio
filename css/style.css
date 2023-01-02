@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     margin:0;
     padding:0;
@@ -51,9 +51,9 @@
   
   .header-subTitle {
     margin: auto;
-    font-family: 'Permanent Marker', cursive;
-    text-transform: uppercase;
-    font-family: 'Orbitron', sans-serif;
+     text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 8px;
   }  
   .overlay {
     width: 100%;
