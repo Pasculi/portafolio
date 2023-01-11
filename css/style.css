@@ -2,133 +2,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
+    margin    : 0;
+    padding   : 0;
     box-sizing: border-box;
 }
 
 .header {
-    height: 100vh;
+    height             : 100vh;
     /* add missing declarations */
-    width: 100%;
-    background-color: rgba(238, 238, 238, .2);
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(/images/background_image_header.jpeg);
-    background-size: cover;
+    width              : 100%;
+    background-color   : rgba(238, 238, 238, .2);
+    display            : flex;
+    flex-wrap          : wrap;
+    background-image   : url(/images/background_image_header.jpeg);
+    background-attachment: fixed;
+    background-size    : cover;
     background-position: center center;
-    text-align: center;
+    text-align         : center;
 
 }
 
 .nav {
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top     : 20px;
+    right   : 40px;
 }
 
 .nav__menu {
-    display: flex;
-    gap: 20px;
+    display        : flex;
+    gap            : 20px;
     justify-content: space-between;
-    font-family: 'Orbitron', sans-serif;
-    list-style: none;
-    font-size: 18px;
+    font-family    : 'Orbitron', sans-serif;
+    list-style     : none;
+    font-size      : 18px;
 
 }
 
 .nav__links {
-    color: #fff;
+    color          : #fff;
     text-decoration: none;
 }
 
 /* add a CSS rule for the page title here */
 .header-title {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 100px;
-    margin: auto;
-    max-width: 1940px;
-    line-height: 140px;
+    font-family   : 'Permanent Marker', cursive;
+    font-size     : 100px;
+    margin        : auto;
+    max-width     : 1940px;
+    line-height   : 140px;
     text-transform: uppercase;
-    padding-top: 50px;
+    padding-top   : 50px;
 }
 
 .header-subTitle {
-    margin: auto;
+    margin        : auto;
     text-transform: uppercase;
-    font-family: 'Kalam', cursive;
+    font-family   : 'Kalam', cursive;
     letter-spacing: 8px;
 }
 
 .overlay {
-    width: 100%;
-    height: 100%;
+    width           : 100%;
+    height          : 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: #FFF;
-    font-size: 40px;
+    display         : flex;
+    flex-direction  : column;
+    flex-wrap       : wrap;
+    color           : #FFF;
+    font-size       : 40px;
 
 }
 
 /*Sección acerca de mi*/
-main{
+main {
     font-family: 'Roboto', sans-serif;
 }
-.about-me{
-    display:flex;
-    gap:30px;
+
+.about-me {
+    display        : flex;
+    gap            : 30px;
     justify-content: center;
-    
+
 }
-.about-me__titulo{
-    position:absolute;
-    top:10px;
-    left: 13%;
-    
+
+.about-me__titulo {
+
+    margin-top:20px;
+    left    : 13%;
+
     font-weight: 700;
-    
+
 }
 
-.about-me__imagen{
-    width:200px;
-    height:200px;
+.about-me__imagen {
+    width        : 200px;
+    height       : 200px;
     border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    margin-top: 5%;
+    box-shadow   : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin-top   : 5%;
 
 }
-.about-me__info{
-    width: 60%;
+
+.about-me__info {
+    width     : 60%;
     margin-top: 7%;
     text-align: justify;
 }
-.portafolio{
-    width: 60%;
-    padding-top: 25px;
-    margin: auto;
-}
 
 /*Seccion Portafolio*/
-.portafolio{
-    display:flex;
-    flex-wrap: wrap;
+.main__secondary {
+    width           : 100%;
+    background-color: rgb(241, 241, 240);
+    margin:60px 0;
+    padding: 60px 0;;
+}
+
+.portafolio {
+    display        : flex;
+    width          : 900px;
+    gap            : 20px;
+    flex-wrap      : wrap;
+    margin         : auto;
     justify-content: center;
+}
 
+.card {
+    display         : flex;
+    flex-direction  : column;
+    width           : 350px;
+    box-shadow      : 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding         : 20px;
+    background-color: #000000;
+    border          : 2px solid rgb(255, 153, 0);
+    text-align      : justify;
 }
-.card{
-    width:280px;
-    margin:10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    padding: 20px;
-    
+.card:nth-child(odd){
+    margin-right: 50px;
+}
 
+.card__imagen {
+    width      : 240px;
+    align-self : center;
+    height     : 150px;
+    align-items: center;
+    margin     : 15px 0;
+	
 }
-.card__imagen{
-    width:240px
+
+.card__description {
+    color: #FFF;
 }
-.card__description{
-    background-color: #f2f2f2;
+
+.card__title {
+    color  : rgb(250, 234, 12);
+    padding: 15px;
+}
+img{
+	object-fit: cover;
 }
